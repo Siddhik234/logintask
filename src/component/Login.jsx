@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export const Login=()=>{
     const [email, setEmail] = useState("");
     const [pass,setPass]=useState("")
-    const handleSubmit = () => {
+    const handlelogin = () => {
       sessionStorage.setItem("email", email);
       sessionStorage.setItem("pass", pass);
     };
@@ -50,7 +50,7 @@ export const Login=()=>{
               <Grid item xs={3}></Grid>
   
               <Grid item xs={3}>
-                <Button variant="contained" onClick={handleSubmit}>
+                <Button variant="contained" onClick={handlelogin}>
                   Login
                 </Button>
               </Grid>
